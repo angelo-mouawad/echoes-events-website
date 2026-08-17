@@ -8,7 +8,7 @@
     --ink-2: #332f28;
     --footer-bg: #b0a999;
 
-    /* hero scrim: an elliptical pool behind the text plus an overall gradient, so the headline stays readable on every video frame */
+    /* hero scrim, an elliptical pool behind the text plus an overall gradient, so the headline stays readable on every video frame */
     --scrim-hero:
         radial-gradient(ellipse 70% 56% at 50% 46%,
                     rgba(8, 7, 6, 0.52) 0%,
@@ -30,7 +30,7 @@
     --space-2xl: 4rem;
     --space-3xl: 6rem;
 
-    /* radii + shadows */
+    /* radii and shadows */
     --radius-sm: 8px;
     --radius-md: 14px;
     --radius-lg: 20px;
@@ -111,7 +111,7 @@ body {
     z-index: 0;
 }
 
-/* scrim layered over the video — the video itself is unchanged */
+/* scrim layered over the video, the video itself is unchanged */
 .intro-scrim {
     position: absolute;
     inset: 0;
@@ -136,8 +136,6 @@ body {
     letter-spacing: var(--ls-display);
     margin: 0;
     font-weight: normal;
-    /* trailing letter-spacing adds space on the right; pull it back
-       so the wordmark is optically centred */
     text-indent: var(--ls-display);
     text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
 }
@@ -201,7 +199,7 @@ body {
 
 .btn-primary {
     background-color: var(--gold);
-    color: var(--ink);              /* 9.2:1 on gold */
+    color: var(--ink);
     box-shadow: var(--shadow-dark);
 }
 
@@ -211,8 +209,6 @@ body {
 }
 
 .btn-secondary {
-    /* dark glass rather than light, so the white label keeps its
-       contrast whichever video frame is behind it */
     background-color: rgba(17, 17, 17, 0.42);
     color: #ffffff;
     border-color: rgba(255, 255, 255, 0.75);
@@ -719,10 +715,10 @@ input[type="file"] {
 /* --------------------section-------------------- */
 
 .site-footer {
-    background-color: var(--footer-bg);   /* unchanged colour */
+    background-color: var(--footer-bg);
     background-size: cover;
     background-repeat: no-repeat;
-    color: var(--ink-2);                  /* was white: 2.34:1 on this greige */
+    color: var(--ink-2);
     padding: var(--space-2xl) clamp(1.25rem, 5vw, 3rem) var(--space-md);
     position: relative;
 }
@@ -763,9 +759,6 @@ input[type="file"] {
     width: 84px;
     height: auto;
     display: block;
-    /* the artwork is a circle on a transparent square canvas, so a
-       box-shadow would paint a square behind it — drop-shadow follows
-       the alpha silhouette instead */
     border-radius: 50%;
     filter: drop-shadow(0 4px 10px rgba(17, 17, 17, 0.28));
     margin-bottom: var(--space-sm);
@@ -865,8 +858,6 @@ input[type="file"] {
     width: var(--tap);
     height: var(--tap);
     border-radius: 50%;
-    /* same as the logo: circular artwork on a transparent square, so the
-       shadow goes on the image's alpha, not on the link box */
     transition: transform var(--t-base) var(--ease),
                 filter var(--t-base) var(--ease);
 }
@@ -894,7 +885,7 @@ input[type="file"] {
     border-radius: 50%;
 }
 
-/* --- job / CTA button --- */
+/* --- job and CTA button --- */
 
 .job-button {
     display: inline-flex;
@@ -903,7 +894,7 @@ input[type="file"] {
     min-height: var(--tap);
     padding: 0 var(--space-md);
     background-color: var(--gold);
-    color: var(--ink);              /* 9.2:1 — white was 2.0:1 */
+    color: var(--ink);
     font-size: var(--fs-sm);
     letter-spacing: 0.08em;
     border-radius: var(--radius-pill);
@@ -998,7 +989,7 @@ input[type="file"] {
     transform: translateY(-2px);
 }
 
-/* --- footer responsive: 1 col -> 2 col -> 3 col --- */
+/* --- footer responsive --- */
 
 @media (min-width: 600px) {
     .footer-grid {
