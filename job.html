@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes Events</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="job.js" defer></script>
+</head>
+<body>
+    <section class="contact-section" id="conatct-us">
+        <h2>JOB APPLICATION</h2>
+        <form class="contact-form" action="job.php" method="post">
+            <div class="form-row">
+                <input type="text" name="firstName" placeholder="First Name" required>
+            </div>
+            <div class="form-row">
+                <input type="text" name="lastName" placeholder="Family Name" required>
+            </div>
+            <div class="form-row">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="form-row">
+                <select name="gender" required>
+                    <option value="" disabled selected hidden>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <select name="position" required>
+                    <option value="" disabled selected hidden>Position</option>
+                    <option value="host/hostess">Host/Hostess</option>
+                    <option value="event coordinator">Event Coordinator</option>
+                    <option value="event designer">Event Designer</option>
+                    <option value="account manager">Account Manager</option>
+                    <option value="graphic designer">Graphic Designer</option>
+                    <option value="operations manager">Operations Manager</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <textarea name="message" placeholder="Remarks" rows="8" required></textarea>
+            </div>
+            <button type="submit">Send Request</button>
+        </form>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <img src="images/logo.png" alt="Echoes Events" class="footer-logo">
+                    <p class="footer-tagline">Event planning and production in Beirut &mdash; weddings, corporate galas, concerts, fashion shows and destination celebrations.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/echoesevents.lb/" target="_blank" rel="noopener" aria-label="Echoes Events on Instagram">
+                            <img src="images/instagram.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/people/Echoes-Events/61572969961068/#" target="_blank" rel="noopener" aria-label="Echoes Events on Facebook">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/company/echoes-events-lb/" target="_blank" rel="noopener" aria-label="Echoes Events on LinkedIn">
+                            <img src="images/linkedin.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer-col footer-nav" aria-label="Quick links">
+                    <h2 class="footer-heading">Quick Links</h2>
+                    <ul class="footer-list">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#moments">Special Moments</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#showreel">Showreel</a></li>
+                        <li><a href="index.html#services">Our Services</a></li>
+                        <li><a href="index.html#conatct-us">Plan Your Event</a></li>
+                        <li><a href="job.html">Apply For a Job</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col footer-contact">
+                    <h2 class="footer-heading">Contact</h2>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <img src="images/location.png" alt="" class="footer-icon" aria-hidden="true">
+                            <span>Beirut &ndash; Dora Highway &ndash; Cebaco Center &ndash; Block A &ndash; 4th Floor</span>
+                        </li>
+                        <li>
+                            <img src="images/email.png" alt="" class="footer-icon" aria-hidden="true">
+                            <a href="mailto:info@eventswithechoes.com">info@eventswithechoes.com</a>
+                        </li>
+                        <li>
+                            <img src="images/phone.png" alt="" class="footer-icon" aria-hidden="true">
+                            <a href="tel:+96181999327">+961 81 999 327</a>
+                        </li>
+                    </ul>
+                    <a href="index.html" class="job-button">
+                        <p>Back to Home Page</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright &copy; <span class="footer-year">2026</span> Echoes Events. All rights reserved. Designed by <a href="https://www.linkedin.com/in/angelo-mouawad-02089329a" target="_blank" rel="noopener">Angelo</a>.</p>
+                <button class="back-to-top" aria-label="Back to top">
+                    <p>&uarr;</p>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <div id="form-alert" class="form-alert hidden"></div>
+
+</body>
+</html>

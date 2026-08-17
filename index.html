@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes Events</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="intro-section" id="home">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="videos/background.mp4" type="video/mp4">
+            </video>
+            <div class="intro-scrim" aria-hidden="true"></div>
+            <div class="intro-content">
+                <h1>E C H O E S</h1>
+                <span class="intro-rule" aria-hidden="true"></span>
+                <p class="intro-tagline">E V E N T S</p>
+                <div class="intro-actions">
+                    <a href="#about" class="btn btn-primary">About us <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+                    <a href="#services" class="btn btn-secondary">Our services <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+                </div>
+            </div>
+            <a href="#moments" class="scroll-cue" aria-label="Scroll to Special Moments">
+                <span aria-hidden="true"></span>
+            </a>
+        </section>
+        <section class="carousel-section" id="moments">
+            <h2>SPECIAL MOMENTS</h2>
+            <div class="carousel-track">
+                <div class="carousel">
+                    <img src="images/1.png" alt="1">
+                    <img src="images/3.png" alt="2">
+                    <img src="images/5.png" alt="3">
+                    <img src="images/7.png" alt="4">
+                    <img src="images/9.png" alt="5">
+                    <img src="images/11.png" alt="6">
+                    <img src="images/13.png" alt="7">
+                    <img SRC="images/15.png" alt="8">
+                </div>
+            </div>
+            <div class="carousel-track">
+                <div class="carousel scroll-left">
+                    <img src="images/2.png" alt="1">
+                    <img src="images/4.png" alt="2">
+                    <img src="images/6.png" alt="3">
+                    <img src="images/8.png" alt="4">
+                    <img src="images/10.png" alt="5">
+                    <img src="images/12.png" alt="6">
+                    <img src="images/14.png" alt="7">
+                    <img src="images/16.png" alt="8">
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h2>ABOUT</h2>
+                <p>At Echoes Events, we believe in crafting more than just gatherings, we create unforgettable experiences that echo in your memories forever. From intimate weddings to grand corporate galas, our dedicated team turns your vision into a spectacular reality with creativity, passion, and precision.</p>
+                <p>With years of expertise in the events industry, we offer personalized service, innovative planning, and flawless execution. Let us bring your event to life, one moment at a time. <a href="#conatct-us">Start planning now</a>.</p>
+            </div>
+            <div class="info-cards">
+                <div class="card">
+                    <div class="icon">
+                        <img src="images/location.png">
+                    </div>
+                    <h3>Address</h3>
+                    <p>Beirut - Dora Highway - Cebaco Center - Block A - 4th Floor</p>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="images/email.png">
+                    </div>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:info@eventswithechoes.com">info@eventswithechoes.com</a></p>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <img src="images/phone.png">
+                    </div>
+                    <h3>Call Now</h3>
+                    <p><a href="tel:+96181999327">+961 81 999 327</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="video-section" id="showreel">
+            <div class="video-frame">
+                <video src="videos/background2.mp4" controls autoplay muted loop playsinline></video>
+            </div>
+        </section>
+        <section class="service-section" id="services">
+            <h2>OUR SERVICES</h2>
+            <div class="service-grid">
+                <div class="service-group">
+                <h3>Corporate Events</h3>
+                <ul>
+                    <li>Conferences</li>
+                    <li>Product Launches</li>
+                    <li>Gala Dinners</li>
+                    <li>Corporate Gatherings</li>
+                    <li>Brand Activation</li>
+                    <li>Exhibition Events</li>
+                    <li>Destination Conferences</li>
+                    <li>Board Meetings</li>
+                </ul>
+                </div>
+                <div class="service-group">
+                <h3>Private Celebrations</h3>
+                <ul>
+                    <li>Weddings</li>
+                    <li>Engagements</li>
+                    <li>Birthdays</li>
+                    <li>Anniversaries</li>
+                    <li>Themed Parties</li>
+                    <li>First Communion</li>
+                    <li>Baptism</li>
+                    <li>Proposals</li>
+                </ul>
+                </div>
+                <div class="service-group">
+                <h3>Destination Events</h3>
+                <ul>
+                    <li>Civil & Religious Weddings</li>
+                    <li>Anniversary Celebrations</li>
+                    <li>Bachelor & Bachelorette Trips</li>
+                    <li>Proposal or Engagement Trips</li>
+                </ul>
+                </div>
+                <div class="service-group">
+                <h3>Concerts</h3>
+                <ul>
+                    <li>Arena or Stadium Concerts</li>
+                    <li>Amphitheater or Outdoor Concerts</li>
+                    <li>Club or Lounge Concerts</li>
+                    <li>Private or Corporate Concerts</li>
+                </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="conatct-us">
+            <h2>PLAN YOUR EVENT</h2>
+            <form class="contact-form" action="contact.php" method="post">
+                <div class="form-row">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="lastName" placeholder="Family Name" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="location" placeholder="Location" required>
+                </div>
+                <div class="form-row">
+                    <input type="date" name="approxDate" placeholder="Approximate Date" required>
+                </div>
+                <div class="form-row">
+                    <select name="eventType" required>
+                        <option value="" disabled selected hidden>Select Event Type</option>
+                        <option value="corporate event">Corporate Event</option>
+                        <option value="private celebration">Private Celebration</option>
+                        <option value="destination event">Destination Event</option>
+                        <option value="concert">Concert</option>
+                        <option value="fasion show">Fasion Show</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Request</button>
+            </form>
+        </section>        
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <img src="images/logo.png" alt="Echoes Events" class="footer-logo">
+                    <p class="footer-tagline">Event planning and production in Beirut &mdash; weddings, corporate galas, concerts, fashion shows and destination celebrations.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/echoesevents.lb/" target="_blank" rel="noopener" aria-label="Echoes Events on Instagram">
+                            <img src="images/instagram.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/people/Echoes-Events/61572969961068/#" target="_blank" rel="noopener" aria-label="Echoes Events on Facebook">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/company/echoes-events-lb/" target="_blank" rel="noopener" aria-label="Echoes Events on LinkedIn">
+                            <img src="images/linkedin.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer-col footer-nav" aria-label="Quick links">
+                    <h2 class="footer-heading">Quick Links</h2>
+                    <ul class="footer-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#moments">Special Moments</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#showreel">Showreel</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#conatct-us">Plan Your Event</a></li>
+                        <li><a href="job.html">Apply For a Job</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col footer-contact">
+                    <h2 class="footer-heading">Contact</h2>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <img src="images/location.png" alt="" class="footer-icon" aria-hidden="true">
+                            <span>Beirut &ndash; Dora Highway &ndash; Cebaco Center &ndash; Block A &ndash; 4th Floor</span>
+                        </li>
+                        <li>
+                            <img src="images/email.png" alt="" class="footer-icon" aria-hidden="true">
+                            <a href="mailto:info@eventswithechoes.com">info@eventswithechoes.com</a>
+                        </li>
+                        <li>
+                            <img src="images/phone.png" alt="" class="footer-icon" aria-hidden="true">
+                            <a href="tel:+96181999327">+961 81 999 327</a>
+                        </li>
+                    </ul>
+                    <a href="job.html" class="job-button">
+                        <p>Apply For a Job</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright &copy; <span class="footer-year">2026</span> Echoes Events. All rights reserved. Designed by <a href="https://www.linkedin.com/in/angelo-mouawad-02089329a" target="_blank" rel="noopener">Angelo</a>.</p>
+                <button class="back-to-top" aria-label="Back to top">
+                    <p>&uarr;</p>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <div id="form-alert" class="form-alert hidden"></div>
+
+    <div class="dot-nav">
+        <div class="dot" data-target=".intro-section">
+            <span class="label">Intro</span>
+        </div>
+        <div class="dot" data-target=".carousel-section">
+            <span class="label">Events</span>
+        </div>
+        <div class="dot" data-target=".about-section">
+            <span class="label">About</span>
+        </div>
+        <div class="dot" data-target=".video-section">
+            <span class="label">Video</span>
+        </div>
+        <div class="dot" data-target=".service-section">
+            <span class="label">Services</span>
+        </div>
+        <div class="dot" data-target=".contact-section">
+            <span class="label">Event Planner</span>
+        </div>
+    </div>
+
+</body>
+</html>
